@@ -1,4 +1,7 @@
 pip:
+  config_contents:
+    global:
+    per_user:
   config:
     global:
       cert: /etc/pip/cert.pem # Use along with pip:cert, as below.
