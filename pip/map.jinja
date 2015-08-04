@@ -5,6 +5,7 @@
           'build-essential',
           'python-dev',
         ],
+        'pip_conf': '/etc/pip.conf',
     },
     'RedHat': {
         'pip_pkg': 'python-pip',
@@ -12,5 +13,11 @@
           'gcc',
           'python-devel',
         ],
+        'pip_conf': '/etc/pip.conf',
+    },
+    'Windows': {
+        'pip_pkg': 'pip',
+        'dev_pkgs': [],
+        'pip_conf': 'C:\Python\pip.conf',
     },
 }, merge=salt['pillar.get']('pip:lookup')) %}
